@@ -31,7 +31,7 @@ var jQuery = function( selector, context ) {
 	_jQuery = window.jQuery,
 
 	// Map over the $ in case of overwrite
-	_$ = window.$,
+	// _$ = window.$,
 
 	// A central reference to the root jQuery(document)
 	rootjQuery,
@@ -4411,7 +4411,7 @@ if ( jQuery.support.ajax ) {
 
 
 // Expose jQuery to the global object
-window.jQuery = window.$ = jQuery;
+window.jQuery = /*window.$*/ = jQuery;
 
 // Expose jQuery as an AMD module, but only for AMD loaders that
 // understand the issues with loading multiple versions of jQuery
